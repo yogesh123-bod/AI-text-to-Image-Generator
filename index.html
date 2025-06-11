@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Image Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">
+      <img src="magic.png" class="title_icon" />
+      <span class="title_text">AI Image Generator</span>
+    </h1>
+
+    <div class="form-and-image">
+      <section class="form-container">
+        <textarea id="prompt" rows="5" class="form-container__prompt-input" placeholder="Describe your image...
+(eg. image of two Doughnut with yellow background)"></textarea>
+
+        <div class="form-container__dropdown-group">
+          <select id="dropdowmStyles" class="form-container__dropdown">
+            <option value="realistic">Realistic</option>
+            <option value="anime">Anime</option>
+            <option value="flux-schnell">Flux-Schnell</option>
+          </select>
+          <select id="dropdowmRatio" class="form-container__dropdown">
+            <option value="1:1">1:1</option>
+            <option value="16:9">16:9</option>
+            <option value="9:16">9:16</option>
+          </select>
+        </div>
+
+        <button class="form-container__button" onclick="generateImage()">
+          <img src="magic.png" />
+          Generate Image
+        </button>
+      </section>
+
+      <section class="image-container" id="imageContainer">
+        <img id="imageResult" class="image-container__image-result" src="example.png" />
+        <div class="image-container__layer"></div>
+        <button class="image-container__download-button" onclick="downloadImage()">
+          <img src="down.png" />
+        </button>
+        <div class="image-container__loading-container">
+          <svg class="image-container__loading-spinner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+            <circle fill="#000" stroke="#000" stroke-width="20" r="15" cx="40" cy="65">
+              <animate attributeName="cy" dur="1.7s" values="65;135;65;" repeatCount="indefinite" begin="-.4s" />
+            </circle>
+            <circle fill="#000" stroke="#000" stroke-width="20" r="15" cx="100" cy="65">
+              <animate attributeName="cy" dur="1.7s" values="65;135;65;" repeatCount="indefinite" begin="-.2s" />
+            </circle>
+            <circle fill="#000" stroke="#000" stroke-width="20" r="15" cx="160" cy="65">
+              <animate attributeName="cy" dur="1.7s" values="65;135;65;" repeatCount="indefinite" begin="0s" />
+            </circle>
+          </svg>
+          <span class="image-container__loading-text">Generating Image...</span>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
