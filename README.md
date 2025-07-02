@@ -9,6 +9,19 @@ AI Image Generator is a minimal and elegant web application that allows users to
 
 https://deft-travesseiro-bf4ff5.netlify.app/
 
+### Screenshot
+
+![App Screenshot](https://github.com/user-attachments/assets/ae9ac93b-4991-414c-b580-ac2b000cd495)
+
+![Image](https://github.com/user-attachments/assets/eac3bb5b-28e3-42e8-9085-6113f5c94f67)
+
+![Image](https://github.com/user-attachments/assets/d17b92de-3be7-4726-8a36-f6b9a06edb3a)
+
+ ![Image](https://github.com/user-attachments/assets/533c376b-3821-4e77-bae7-1c673f7adddc)
+
+
+
+
 
 
 ### 🧠 What it is
